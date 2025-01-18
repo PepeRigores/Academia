@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Banner Principal -->
+<header>
+    <section class="flex-container">
+    <div class="cajaIzqda">
+        <img src="Imagenes Academia/Academy Logo.gif">
+    </div>
+    <div class="cajaDrcha">
+        <h1>Impulsa tu futuro como programador</h1>
+        <p>Aprende y aplica el desarrollo web desde la base hasta la interfaz</p>
+        <a href="formulario.html" class="boton_Naranja">¡Inscríbete ahora!</a>
+    </div>
+    </section>
+</header>
+
+<!-- Cuerpo página -->
+<main>
+    <h2>Inscripción gratuita:</h2>
+    <p>Si eres una persona autodidacta puedes registarte en nuestra <b>Academía DAW</b> y acceder a <b style="color:brown ;">¡Todo el contenido sin ningún coste!</b>. 
+    También tienes la posibilidad de dar clases particulares (Presencial o Semi-presencial) donde podrás resolver todas tus dudas o solicitar que un profesor te ayude 
+    a avanzar siguiendo un camino estructurado, con propuestas de problemas y con seguimiento de tu progreso. ¡Tú decides!<br><br>
+    Nos especializamos en la formación de futuros desarrolladores de aplicaciones web, ofreciendo una educación integral que combina teoría y práctica.
+    Nuestro equipo de expertos está comprometido en brindarte un contenido de calidad, con un enfoque en las últimas tendencias y herramientas del sector.
+    Únete a nosotros y adquiere las habilidades necesarias para destacar en un mundo digital en constante evolución. ¡Tu futuro comienza aquí!<br><br>
+    </p>
+
+    <!-- Fornulario -->
+    <h3>Formulario:</h3>
+	<p>
+		<form>
+		   *Nombre			    <input type="text" name="nombre" required><br>
+		   *Primer Apellido		<input type="text" name="apellido1" required><br>
+			Segundo Apellido	<input type="text" name="apellido2"><br>
+	   		*e-mail				<input type="email" required><br>
+	   		*Contraseña			<input type="password" placeholder="Contraseña" required><br>
+	   		*Repite contraseña	<input type="password" placeholder="Repetir Contraseña" required><br>
+			Curso:				<input type="checkbox" name="curso" label for="Primero">  Primer Curso </label> 
+							    <input type="checkbox" name="curso" label for="Segundo">  Segundo Curso </label><br>
+			Modalidad:			<input type="radio" name="asistencia" label for="Presencial">  Presencial </label>
+							    <input type="radio" name="asistencia" label for="Semi-presencial">  Semi-presencial </label>
+							    <input type="radio" name="asistencia" label for="On-line">  On-line </label><br>
+	   		Foto perfil:		<input type="file"><br>
+	   		Fecha de inicio:	<input type="date"><br>
+	   						    <input type="submit"><br><br>
+		
+	
+		</form>
+	</p>
+	<br><br>
+		<p style="text-align: left; padding: 20px;">* campos obligatorios</p>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Academia de Desarrollo de Aplicaciones Web. Todos los derechos reservados.</p>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="#modalidades">Modalidades</a> |
+        <a href="#cursos">Cursos</a> |
+        <a href="#inscripcion">Inscripción</a> |
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</footer>
+
+</body>
+</html>
