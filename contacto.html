@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pruebasBaner</title>
+    <title>Contacto - Academia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -23,17 +24,77 @@
     </header>
 
 <!-- Cuerpo Página -->   
-<main>
-     <h2>Contacto:</h2><br><br>
-     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, hic iusto voluptate provident dolor adipisci ea eos,
-         ipsam eaque magnam quisquam saepe fugiat dolorum at quaerat alias blanditiis dolores earum? Lorem ipsum dolor, sit amet 
-         consectetur adipisicing elit. Dicta voluptatem reprehenderit eveniet, nemo sequi officiis, unde ab totam veniam officia 
-         odit aspernatur id magni veritatis ducimus, accusantium est autem cumque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-         Consectetur explicabo culpa optio a veritatis ullam qui cum error quo accusantium perspiciatis laudantium obcaecati exercitationem 
-         placeat dolore dolorem totam, repellendus maxime.
-         <br><br>
-     </p>
+<main class="contact-page">
+    <h2 class="section-title">Contacto</h2>
+    
+    <div class="contact-container">
+        <!-- Información de contacto -->
+        <section class="contact-info">
+            <h3>Información de Contacto</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Calle Bruselas, 4<br>30739 San Javier<br>Murcia</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+34 699 08 65 83</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>pepe.rigores@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono (opcional)">
+                </div>
+                <div class="form-group">
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona el asunto</option>
+                        <option value="informacion">Información general</option>
+                        <option value="cursos">Información sobre cursos</option>
+                        <option value="precios">Precios y pagos</option>
+                        <option value="otro">Otro asunto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" name="mensaje" required placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="boton_Naranja">Enviar mensaje</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Mapa -->
+    <section class="map-section">
+        <h3>Nuestra ubicación</h3>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0000000000004!2d-1.1166666666666667!3d37.983333333333334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd639f91e9a59cb7%3A0xe236e96232c0adbf!2sCalle%20Bruselas%2C%204%2C%2030710%20San%20Javier%2C%20Murcia!5e0!3m2!1ses!2ses!4v1716000000000!5m2!1ses!2ses" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
 </main>
 
 <!-- Footer -->
