@@ -39,14 +39,14 @@ Plataforma web para una academia especializada en el Desarrollo de Aplicaciones 
 ├── contacto.html       # Página de contacto
 ├── formulario.html     # Formulario de inscripción
 ├── styles.css          # Estilos CSS
-├── app.js             # JavaScript
+├── app.js              # JavaScript
 └── Imagenes Academia/  # Recursos multimedia
 
 
 ```
-## ⭐ Échale un vistazo:
+### ⭐ Échale un vistazo:
 
-### 👉 https://peperigores.github.io/Academia/
+#### 👉 https://peperigores.github.io/Academia/
 
 
 ## 🚀 Instalación y Uso
@@ -62,7 +62,7 @@ git clone https://github.com/PepeRigores/Academia
 
 - Estudiantes interesados en desarrollo web
 - Profesionales buscando actualizar sus conocimientos
-- Angel: mi profesor de Lenguaje de Marcas 😃 
+- Angel: mi profesor de Lenguaje de Marcas  😃 
 
 ## 📞 Contacto
 
