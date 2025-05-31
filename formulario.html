@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
-	<link rel="stylesheet" href="styles.css">
+    <title>Formulario de Inscripción - Academia DAW</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -23,40 +24,99 @@
 </header>
 
 <!-- Cuerpo página -->
-<main>
-    <h2>Inscripción gratuita:</h2>
-    <p>Si eres una persona autodidacta puedes registarte en nuestra <b>Academía DAW</b> y acceder a <b style="color:brown ;">¡Todo el contenido sin ningún coste!</b>. 
-    También tienes la posibilidad de dar clases particulares (Presencial o Semi-presencial) donde podrás resolver todas tus dudas o solicitar que un profesor te ayude 
-    a avanzar siguiendo un camino estructurado, con propuestas de problemas y con seguimiento de tu progreso. ¡Tú decides!<br><br>
-    Nos especializamos en la formación de futuros desarrolladores de aplicaciones web, ofreciendo una educación integral que combina teoría y práctica.
-    Nuestro equipo de expertos está comprometido en brindarte un contenido de calidad, con un enfoque en las últimas tendencias y herramientas del sector.
-    Únete a nosotros y adquiere las habilidades necesarias para destacar en un mundo digital en constante evolución. ¡Tu futuro comienza aquí!<br><br>
-    </p>
+<main class="form-page">
+    <div class="form-container">
+        <h2>Inscripción gratuita</h2>
+        <div class="form-description">
+            <p>Si eres una persona autodidacta puedes registarte en nuestra <b>Academia DAW</b> y acceder a <b class="highlight">¡Todo el contenido sin ningún coste!</b></p>
+            <p>También tienes la posibilidad de dar clases particulares (Presencial o Semi-presencial) donde podrás resolver todas tus dudas o solicitar que un profesor te ayude 
+            a avanzar siguiendo un camino estructurado, con propuestas de problemas y con seguimiento de tu progreso. ¡Tú decides!</p>
+            <p>Nos especializamos en la formación de futuros desarrolladores de aplicaciones web, ofreciendo una educación integral que combina teoría y práctica.
+            Nuestro equipo de expertos está comprometido en brindarte un contenido de calidad, con un enfoque en las últimas tendencias y herramientas del sector.</p>
+        </div>
 
-    <!-- Fornulario -->
-    <h3>Formulario:</h3>
-	<p>
-		<form>
-		   *Nombre			    <input type="text" name="nombre" required><br>
-		   *Primer Apellido		<input type="text" name="apellido1" required><br>
-			Segundo Apellido	<input type="text" name="apellido2"><br>
-	   		*e-mail				<input type="email" required><br>
-	   		*Contraseña			<input type="password" placeholder="Contraseña" required><br>
-	   		*Repite contraseña	<input type="password" placeholder="Repetir Contraseña" required><br>
-			Curso:				<input type="checkbox" name="curso" label for="Primero">  Primer Curso </label> 
-							    <input type="checkbox" name="curso" label for="Segundo">  Segundo Curso </label><br>
-			Modalidad:			<input type="radio" name="asistencia" label for="Presencial">  Presencial </label>
-							    <input type="radio" name="asistencia" label for="Semi-presencial">  Semi-presencial </label>
-							    <input type="radio" name="asistencia" label for="On-line">  On-line </label><br>
-	   		Foto perfil:		<input type="file"><br>
-	   		Fecha de inicio:	<input type="date"><br>
-	   						    <input type="submit"><br><br>
-		
-	
-		</form>
-	</p>
-	<br><br>
-		<p style="text-align: left; padding: 20px;">* campos obligatorios</p>
+        <form class="inscription-form">
+            <div class="form-group">
+                <label for="nombre"><i class="fas fa-user"></i> Nombre*</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido1"><i class="fas fa-user"></i> Primer Apellido*</label>
+                <input type="text" id="apellido1" name="apellido1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido2"><i class="fas fa-user"></i> Segundo Apellido</label>
+                <input type="text" id="apellido2" name="apellido2">
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Contraseña*</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password2"><i class="fas fa-lock"></i> Repetir Contraseña*</label>
+                <input type="password" id="password2" name="password2" placeholder="Repetir Contraseña" required>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>Curso:</label>
+                <div class="checkbox-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="curso" value="primero">
+                        <span>Primer Curso</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="curso" value="segundo">
+                        <span>Segundo Curso</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Modalidad:</label>
+                <div class="radio-options">
+                    <label class="radio-label">
+                        <input type="radio" name="asistencia" value="presencial">
+                        <span>Presencial</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="asistencia" value="semi-presencial">
+                        <span>Semi-presencial</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="asistencia" value="online">
+                        <span>Online</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="foto"><i class="fas fa-image"></i> Foto de perfil</label>
+                <input type="file" id="foto" name="foto" class="file-input">
+            </div>
+
+            <div class="form-group">
+                <label for="fecha"><i class="fas fa-calendar"></i> Fecha de inicio</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Enviar Inscripción
+                </button>
+            </div>
+
+            <p class="required-fields"><i class="fas fa-info-circle"></i> Los campos marcados con * son obligatorios</p>
+        </form>
+    </div>
 </main>
 
 <!-- Footer -->
