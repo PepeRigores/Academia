@@ -42,10 +42,12 @@ Plataforma web para una academia especializada en el Desarrollo de Aplicaciones 
 ├── app.js             # JavaScript
 └── Imagenes Academia/  # Recursos multimedia
 
-## Échale un vistazo:
 
-https://peperigores.github.io/Academia/
 ```
+## ⭐ Échale un vistazo:
+
+### 👉 https://peperigores.github.io/Academia/
+
 
 ## 🚀 Instalación y Uso
 
@@ -64,7 +66,7 @@ git clone https://github.com/PepeRigores/Academia
 
 ## 📞 Contacto
 
-Para más información, puedes contactarnos a través del [formulario de contacto](contacto.html) en nuestra web.
+Para más información, puedes contactarnos a través del [formulario de contacto](https://peperigores.github.io/Academia/contacto.html) en nuestra web.
 
 ## 📄 Licencia
 
